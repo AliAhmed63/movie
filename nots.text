@@ -1,0 +1,19 @@
+/*
+الـ UI (مثلاً في Cubit أو Bloc):
+يستدعي الـ Use Case ويديها اسم المدينة.
+
+الـ Use Case:
+بياخد اسم المدينة وبيمرره لـ دالة الريبو (repository method).
+
+الريبو (Repository):
+بتنادي على الـ Data Source اللي هتعمل الاتصال بالـ API أو تجيب الداتا.
+
+البيانات بترجع من الريبو للـ Use Case، وبعدين للـ UI عشان تعرضها.
+
+*/
+
+UI → Cubit → UseCase → Repository (interface) → RepositoryImpl → RemoteDataSource → API
+⇦ ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ←
+        JSON → Model → Entity → UseCase → Cubit → UI
+
+

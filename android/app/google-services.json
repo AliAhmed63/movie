@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438603931578",
+    "project_id": "clean-arch-c8777",
+    "storage_bucket": "clean-arch-c8777.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438603931578:android:02ab3329b3bbe760614783",
+        "android_client_info": {
+          "package_name": "com.example.clean_arc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXSIUNpDN2KszM4_yNmPL0nsER5ARLbkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
