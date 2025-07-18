@@ -36,7 +36,7 @@ jobs:
 
       - name: Build and Distribute App
         env:
-          FIREBASE_CLI_TOKEN: ${{ secrets.FAST_LANE_SECURE }}
+          FAST_LANE_SECURE: ${{ secrets.FAST_LANE_SECURE }}
         run: |
           cd android
           bundle exec fastlane android firebase_distribution_test
