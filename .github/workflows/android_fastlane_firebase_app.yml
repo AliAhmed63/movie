@@ -26,13 +26,17 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.3"
-          bundler-cache: true
-          working-directory: android
-          
+          ruby-version: '3.2.3'
+          bundler-cache: false
+      
+      - name: Install Ruby Gems
+        run: |
+          cd android
+          bundle install
+
       - name: Build and Distribute App
         env:
           FIREBASE_CLI_TOKEN: ${{ secrets.FAST_LANE_SECURE }}
         run: |
+          cd android
           bundle exec fastlane android firebase_distribution_test
-        working-directory: android
